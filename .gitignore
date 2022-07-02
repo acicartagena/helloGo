@@ -33,3 +33,4 @@ CVS
 
 # Cocoapods
 Pods/
+.DS_Store~2-spm-and-remove-cocoapods
