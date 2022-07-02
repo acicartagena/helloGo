@@ -1,0 +1,29 @@
+PODS:
+  - Core (1.0)
+  - Feature (1.0):
+    - Core
+    - Service
+  - Service (1.0):
+    - Core
+
+DEPENDENCIES:
+  - Core (from `modules/Core`)
+  - Feature (from `modules/Feature`)
+  - Service (from `modules/Service`)
+
+EXTERNAL SOURCES:
+  Core:
+    :path: modules/Core
+  Feature:
+    :path: modules/Feature
+  Service:
+    :path: modules/Service
+
+SPEC CHECKSUMS:
+  Core: 2f2f8b9c6545bd64cf1b52408a24433efb1e2b47
+  Feature: 52d93bc97f06e3fed7559e5bf479b55554027ddb
+  Service: 7949c127e84cb0c58a3a11270178e5666ac27e92
+
+PODFILE CHECKSUM: ac82111caa3254060761c07e0eb5bd15957b8616
+
+COCOAPODS: 1.11.3

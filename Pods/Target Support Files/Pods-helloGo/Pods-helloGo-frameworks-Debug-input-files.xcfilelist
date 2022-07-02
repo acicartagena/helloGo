@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-helloGo/Pods-helloGo-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Core/Core.framework
+${BUILT_PRODUCTS_DIR}/Feature/Feature.framework
+${BUILT_PRODUCTS_DIR}/Service/Service.framework
