@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
     :path: modules/service
 
 SPEC CHECKSUMS:
-  Core: db7e00cf6bc0c515348382c67acccea403720b3c
+  Core: 2f2f8b9c6545bd64cf1b52408a24433efb1e2b47
   Feature: f3eb804d63aace566d8706462af7d02834de3e04
   Service: 8d6dfca2aba801c76e2a65367176f89fdf14a37c
 
