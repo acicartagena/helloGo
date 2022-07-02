@@ -11,17 +11,17 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
 
   spec.swift_version = '5'
-  spec.source_files = 'Source/**/*.swift'
-  spec.exclude_files = 'Source/**/*Spec.swift'
+  spec.source_files = 'Sources/**/*.swift'
+  spec.exclude_files = 'Sources/**/*Spec.swift'
   spec.resources = [
-    'Source/**/*.{xcassets,storyboard,xib,strings,html,js}'
+    'Sources/**/*.{xcassets,storyboard,xib,strings,html,js}'
   ]
 
   spec.dependency 'Service'
   spec.dependency 'Core'
 
   spec.test_spec 'Tests' do |test_spec|
-    test_spec.source_files = 'Source/**/*Spec.swift', 'Tests/**/*.swift'
+    test_spec.source_files = 'Sources/**/*Spec.swift', 'Tests/**/*.swift'
   end
 
 end
