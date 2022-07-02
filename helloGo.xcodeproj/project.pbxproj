@@ -14,6 +14,7 @@
 		354286F0287012A600F24CC0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354286EF287012A600F24CC0 /* ContentView.swift */; };
 		354286F2287012A700F24CC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 354286F1287012A700F24CC0 /* Assets.xcassets */; };
 		354286F5287012A700F24CC0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 354286F4287012A700F24CC0 /* Preview Assets.xcassets */; };
+		35FEECCB287089290065200E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 35FEECCA287089290065200E /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35FEECCB287089290065200E /* Kingfisher in Frameworks */,
 				35366848287033D400CBBC97 /* Service in Frameworks */,
 				35366845287033BD00CBBC97 /* Core in Frameworks */,
 				3536684B287033E900CBBC97 /* Feature in Frameworks */,
@@ -107,6 +109,7 @@
 				35366844287033BD00CBBC97 /* Core */,
 				35366847287033D400CBBC97 /* Service */,
 				3536684A287033E900CBBC97 /* Feature */,
+				35FEECCA287089290065200E /* Kingfisher */,
 			);
 			productName = helloGo;
 			productReference = 354286EA287012A600F24CC0 /* helloGo.app */;
@@ -136,6 +139,9 @@
 				Base,
 			);
 			mainGroup = 354286E1287012A600F24CC0;
+			packageReferences = (
+				35FEECC9287089290065200E /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 354286EB287012A600F24CC0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -365,6 +371,17 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		35FEECC9287089290065200E /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		35366844287033BD00CBBC97 /* Core */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -377,6 +394,11 @@
 		3536684A287033E900CBBC97 /* Feature */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Feature;
+		};
+		35FEECCA287089290065200E /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35FEECC9287089290065200E /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
