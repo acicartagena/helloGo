@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A4B72FA10FA81C72671E15D /* Pods_helloGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E729F634843B837872FFEED /* Pods_helloGo.framework */; };
+		35366845287033BD00CBBC97 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 35366844287033BD00CBBC97 /* Core */; };
+		35366848287033D400CBBC97 /* Service in Frameworks */ = {isa = PBXBuildFile; productRef = 35366847287033D400CBBC97 /* Service */; };
+		3536684B287033E900CBBC97 /* Feature in Frameworks */ = {isa = PBXBuildFile; productRef = 3536684A287033E900CBBC97 /* Feature */; };
 		354286EE287012A600F24CC0 /* helloGoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354286ED287012A600F24CC0 /* helloGoApp.swift */; };
 		354286F0287012A600F24CC0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354286EF287012A600F24CC0 /* ContentView.swift */; };
 		354286F2287012A700F24CC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 354286F1287012A700F24CC0 /* Assets.xcassets */; };
@@ -15,14 +17,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35366843287033A600CBBC97 /* Core */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Core; path = modules/Core; sourceTree = "<group>"; };
+		35366846287033CC00CBBC97 /* Service */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Service; path = modules/Service; sourceTree = "<group>"; };
+		35366849287033E100CBBC97 /* Feature */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Feature; path = modules/Feature; sourceTree = "<group>"; };
 		354286EA287012A600F24CC0 /* helloGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = helloGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		354286ED287012A600F24CC0 /* helloGoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helloGoApp.swift; sourceTree = "<group>"; };
 		354286EF287012A600F24CC0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		354286F1287012A700F24CC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		354286F4287012A700F24CC0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7E729F634843B837872FFEED /* Pods_helloGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_helloGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E137AF55B2BA68564CEE25C2 /* Pods-helloGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-helloGo.debug.xcconfig"; path = "Target Support Files/Pods-helloGo/Pods-helloGo.debug.xcconfig"; sourceTree = "<group>"; };
-		FA96046BE061A54E5224B0DE /* Pods-helloGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-helloGo.release.xcconfig"; path = "Target Support Files/Pods-helloGo/Pods-helloGo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,7 +32,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A4B72FA10FA81C72671E15D /* Pods_helloGo.framework in Frameworks */,
+				35366848287033D400CBBC97 /* Service in Frameworks */,
+				35366845287033BD00CBBC97 /* Core in Frameworks */,
+				3536684B287033E900CBBC97 /* Feature in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,10 +44,9 @@
 		354286E1287012A600F24CC0 = {
 			isa = PBXGroup;
 			children = (
+				354287022870315700F24CC0 /* Packages */,
 				354286EC287012A600F24CC0 /* helloGo */,
 				354286EB287012A600F24CC0 /* Products */,
-				53070F84A7F846ACFCA545D9 /* Pods */,
-				BEAECE75158388D449A4B0F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,22 +77,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		53070F84A7F846ACFCA545D9 /* Pods */ = {
+		354287022870315700F24CC0 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				E137AF55B2BA68564CEE25C2 /* Pods-helloGo.debug.xcconfig */,
-				FA96046BE061A54E5224B0DE /* Pods-helloGo.release.xcconfig */,
+				35366843287033A600CBBC97 /* Core */,
+				35366846287033CC00CBBC97 /* Service */,
+				35366849287033E100CBBC97 /* Feature */,
 			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		BEAECE75158388D449A4B0F9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7E729F634843B837872FFEED /* Pods_helloGo.framework */,
-			);
-			name = Frameworks;
+			name = Packages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,17 +94,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 354286F8287012A700F24CC0 /* Build configuration list for PBXNativeTarget "helloGo" */;
 			buildPhases = (
-				34B1C2CDBF5D9C2DA61EF336 /* [CP] Check Pods Manifest.lock */,
 				354286E6287012A600F24CC0 /* Sources */,
 				354286E7287012A600F24CC0 /* Frameworks */,
 				354286E8287012A600F24CC0 /* Resources */,
-				E2DCAE59167F7272CBFB6531 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = helloGo;
+			packageProductDependencies = (
+				35366844287033BD00CBBC97 /* Core */,
+				35366847287033D400CBBC97 /* Service */,
+				3536684A287033E900CBBC97 /* Feature */,
+			);
 			productName = helloGo;
 			productReference = 354286EA287012A600F24CC0 /* helloGo.app */;
 			productType = "com.apple.product-type.application";
@@ -158,48 +156,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		34B1C2CDBF5D9C2DA61EF336 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-helloGo-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E2DCAE59167F7272CBFB6531 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-helloGo/Pods-helloGo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-helloGo/Pods-helloGo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-helloGo/Pods-helloGo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		354286E6287012A600F24CC0 /* Sources */ = {
@@ -330,7 +286,6 @@
 		};
 		354286F9287012A700F24CC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E137AF55B2BA68564CEE25C2 /* Pods-helloGo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -360,7 +315,6 @@
 		};
 		354286FA287012A700F24CC0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA96046BE061A54E5224B0DE /* Pods-helloGo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -410,6 +364,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		35366844287033BD00CBBC97 /* Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Core;
+		};
+		35366847287033D400CBBC97 /* Service */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Service;
+		};
+		3536684A287033E900CBBC97 /* Feature */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Feature;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 354286E2287012A600F24CC0 /* Project object */;
 }
