@@ -21,6 +21,7 @@
 		354286F1287012A700F24CC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		354286F4287012A700F24CC0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		354286FC28702C6400F24CC0 /* core */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = core; path = modules/core; sourceTree = "<group>"; };
+		354286FD28702D0B00F24CC0 /* service */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = service; path = modules/service; sourceTree = "<group>"; };
 		7E729F634843B837872FFEED /* Pods_helloGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_helloGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E137AF55B2BA68564CEE25C2 /* Pods-helloGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-helloGo.debug.xcconfig"; path = "Target Support Files/Pods-helloGo/Pods-helloGo.debug.xcconfig"; sourceTree = "<group>"; };
 		FA96046BE061A54E5224B0DE /* Pods-helloGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-helloGo.release.xcconfig"; path = "Target Support Files/Pods-helloGo/Pods-helloGo.release.xcconfig"; sourceTree = "<group>"; };
@@ -80,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				354286FC28702C6400F24CC0 /* core */,
+				354286FD28702D0B00F24CC0 /* service */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -119,6 +121,8 @@
 			dependencies = (
 			);
 			name = helloGo;
+			packageProductDependencies = (
+			);
 			productName = helloGo;
 			productReference = 354286EA287012A600F24CC0 /* helloGo.app */;
 			productType = "com.apple.product-type.application";
