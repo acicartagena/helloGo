@@ -17,17 +17,17 @@
   },
   "requires_arc": true,
   "swift_versions": "5",
-  "source_files": "Source/**/*.swift",
-  "exclude_files": "Source/**/*Spec.swift",
+  "source_files": "Sources/**/*.swift",
+  "exclude_files": "Sources/**/*Spec.swift",
   "resources": [
-    "Source/**/*.{xcassets,storyboard,xib,strings,html,js}"
+    "Sources/**/*.{xcassets,storyboard,xib,strings,html,js}"
   ],
   "testspecs": [
     {
       "name": "Tests",
       "test_type": "unit",
       "source_files": [
-        "Source/**/*Spec.swift",
+        "Sources/**/*Spec.swift",
         "Tests/**/*.swift"
       ]
     }
