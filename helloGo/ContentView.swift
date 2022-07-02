@@ -2,13 +2,17 @@
 
 import SwiftUI
 import Feature
+import Core
 
 struct ContentView: View {
     var body: some View {
         ZStack {
             Color.green
-            
-            HelloWorldView()
+
+            VStack {
+                HelloWorldView()
+                Text(Core.helloUpdated)
+            }
         }
     }
 }
