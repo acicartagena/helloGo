@@ -25,6 +25,9 @@ public struct HelloWorldView: View {
     }
 
     public var body: some View {
-        Text(viewModel.text)
+        VStack {
+            Text(viewModel.text)
+            Text(Core.hello)
+        }.background(Color.yellow)
     }
 }
