@@ -33,3 +33,5 @@ CVS
 
 # Cocoapods
 Pods/
+/helloGo.xcworkspace/xcuserdata/acicartagena.xcuserdatad/UserInterfaceState.xcuserstate
+/.DS_Store
