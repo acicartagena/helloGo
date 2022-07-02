@@ -35,3 +35,4 @@ CVS
 Pods/
 /helloGo.xcworkspace/xcuserdata/acicartagena.xcuserdatad/UserInterfaceState.xcuserstate
 /.DS_Store
+/.DS_Store~2-spm-and-remove-cocoapods
